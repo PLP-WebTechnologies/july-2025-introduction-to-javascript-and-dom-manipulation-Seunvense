@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Why Dogs Are Great</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="main-header" role="banner">
+        <div class="header-content">
+            <h1>Why Dogs Are Great</h1>
+            <p>Discover the joy of having a dog as your best friend! Explore breeds, care tips, and more.</p>
+            <img src="dog.jpg" alt="A happy dog playing in a park" class="hero-image">
+        </div>
+    </header>
+    <nav class="main-nav" role="navigation">
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+        <label for="nav-toggle" class="nav-toggle-label">
+            <span></span><span></span><span></span>
+        </label>
+        <ul class="nav-list">
+            <li><a href="#intro" aria-label="Go to Introduction section">Introduction</a></li>
+            <li><a href="#care" aria-label="Go to Dog Care Tips section">Dog Care Tips</a></li>
+            <li><a href="#benefits" aria-label="Go to Benefits section">Benefits</a></li>
+            <li><a href="#breeds" aria-label="Go to Dog Breeds Gallery">Breeds Gallery</a></li>
+            <li><a href="#contact" aria-label="Go to Contact section">Contact</a></li>
+        </ul>
+        <div class="search-bar">
+            <input type="search" id="search-input" placeholder="Search care tips..." aria-label="Search for dog care tips">
+            <button type="submit" id="search-button" aria-label="Submit search">🔍</button>
+        </div>
+    </nav>
+    <div class="main-content-wrapper">
+        <main role="main" class="main-content">
+            <section id="intro" class="intro-section">
+                <h2>Introduction to Dogs</h2>
+                <p id="intro-text">Dogs are loyal companions who bring happiness and love to our lives. They come in various breeds, each with unique traits.</p>
+                <p>From playful puppies to wise seniors, dogs adapt to family life and provide endless joy.</p>
+                <button id="toggle-intro" aria-label="Toggle introduction text visibility">Toggle Intro</button>
+            </section>
+            <section id="care" class="care-section">
+                <h2>Dog Care Tips</h2>
+                <p>Feed your dog a balanced diet, provide regular exercise, and visit the vet annually.</p>
+                <ul id="care-tips">
+                    <li>Daily walks: At least 30 minutes.</li>
+                    <li>Grooming: Brush weekly to reduce shedding.</li>
+                    <li>Training: Use positive reinforcement for commands.</li>
+                    <li>Health: Watch for signs of illness like lethargy.</li>
+                </ul>
+                <button id="care-button" class="care-button" aria-label="Learn more about dog care">Learn More</button>
+            </section>
+            <section id="benefits" class="benefits-section">
+                <h2>Benefits of Owning a Dog</h2>
+                <p>Dogs reduce stress, encourage activity, and offer unconditional love.</p>
+                <ol>
+                    <li>Improved mental health through companionship.</li>
+                    <li>Increased physical activity from walks and play.</li>
+                    <li>Social opportunities at dog parks.</li>
+                    <li>Security and protection for your home.</li>
+                </ol>
+                <div id="fact-counter">Dog Fact #<span id="fact-number">1</span>: Dogs are awesome!</div>
+                <button id="next-fact" aria-label="Show next dog fact">Next Fact</button>
+            </section>
+            <section id="breeds" class="breeds-section">
+                <h2>Dog Breeds Gallery</h2>
+                <p>Select a breed to learn more:</p>
+                <select id="breed-select" aria-label="Select dog breed">
+                    <option value="">Choose a breed</option>
+                    <option value="labrador">Labrador Retriever</option>
+                    <option value="german-shepherd">German Shepherd</option>
+                    <option value="golden-retriever">Golden Retriever</option>
+                </select>
+                <div class="gallery">
+                    <figure class="gallery-item"><img src="labrador.jpg" alt="Labrador Retriever"><figcaption>Labrador: Friendly and energetic.</figcaption></figure>
+                    <figure class="gallery-item"><img src="german-shepherd.jpg" alt="German Shepherd"><figcaption>German Shepherd: Loyal and intelligent.</figcaption></figure>
+                    <figure class="gallery-item"><img src="golden-retriever.jpg" alt="Golden Retriever"><figcaption>Golden Retriever: Gentle and affectionate.</figcaption></figure>
+                    <figure class="gallery-item"><img src="bulldog.jpg" alt="Bulldog"><figcaption>Bulldog: Calm and courageous.</figcaption></figure>
+                </div>
+            </section>
+            <section id="contact" class="contact-section">
+                <h2>Contact Us</h2>
+                <form id="contact-form" action="#" method="post" aria-label="Contact form">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                    <button type="submit" id="form-submit">Send</button>
+                </form>
+                <p id="form-message"></p>
+            </section>
+        </main>
+        <aside class="sidebar" role="complementary">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#care">Care Resources</a></li>
+                <li><a href="#breeds">Breed Info</a></li>
+                <li><a href="https://example.com/adopt">Adopt a Dog</a></li>
+                <li><a href="https://example.com/vet">Find a Vet</a></li>
+            </ul>
+        </aside>
+    </div>
+    <footer class="main-footer" role="contentinfo">
+        <p>Contact: <a href="mailto:vincentoluwaseun@gmail.com">vincentoluwaseun@gmail.com</a> | &copy; 2025 Oluwaseun</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
